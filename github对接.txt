@@ -1,0 +1,10 @@
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+ssh-keygen -t rsa -C "youremail@example.com"
+
+打开 Github，登录自己的账号后
+点击自己的头像->settings->SSH And GPG Keys->New SSH key
+将本地 id_rsa.pub 中的内容粘贴到 Key 文本框中，随意输入一个 title(不要有中文)，点击 Add Key 即可
+
+验证：
+ssh git@github.com
